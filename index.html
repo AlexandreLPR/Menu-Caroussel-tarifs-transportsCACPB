@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Carrousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="accordion-container">
+  <h2 class="section-title">Offres par profil :</h2>
+ 
+  <div class="accordion-item">
+	<div class="accordion-header">
+  	Actif et salarié
+  	
+	<span class="toggle-icon">+</span>
+	</div>
+	<div class="accordion-content">
+  	<ul>
+    	<li>Navigo liberté +</li>
+    	<li>Forfait Navigo mois</li>
+    	<li>Forfait Navigo semaine</li>
+    	<li>Forfait Navigo annuel</li>
+    	<li>Forfait Navigo jour</li>
+    	<li>Ticket + sur passe navigo Easy ou sur smartphone</li>
+    	<li>Ticket +</li>
+    	<li>Ticket d'accès à bord SMS</li>
+    	<li>Forfait mobilis</li>
+  	</ul>
+  	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Infos</a></div>
+	</div>
+  </div>
+
+  <div class="accordion-item">
+	<div class="accordion-header">
+  	Écolier, collégien, lycéen
+  	<span class="toggle-icon">+</span>
+	</div>
+	<div class="accordion-content">
+  	<ul>
+    	<li>Forfait imagine R Scolaire</li>
+    	<li>Forfait imagine R Junior</li>
+    	<li>Carte Scol'R</li>
+    	<li>Carte scolaire bus lignes régulières</li>
+  	</ul>
+  	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Infos</a></div>
+	</div>
+  </div>
+
+ 	 <div class="accordion-item">
+	<div class="accordion-header">
+  	Étudiant ou stagiaire de moins de 26 ans
+  	<span class="toggle-icon">+</span>
+	</div>
+	<div class="accordion-content">
+  	<ul>
+    	<li>Forfait imagine R étudiant</li>
+    	<li>Forfait Navigo Jeune weekend</li>
+  	</ul>
+ 	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=jeune">Infos</a></div>
+	</div>
+  </div>
+
+
+  <div class="accordion-item">
+	<div class="accordion-header"> Inactif, retraité
+  	<span class="toggle-icon">+</span>
+	</div>
+	<div class="accordion-content">
+  	<ul>
+    	<li>Forfait Navigo annuel tarification senior</li>
+    	<li>Forfait Améthyste</li>
+  	</ul>
+  	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=senior">Infos</a></div>
+	</div>
+  </div>
+
+  <div class="accordion-item">
+	<div class="accordion-header">
+  	Solidarité
+  	<span class="toggle-icon">+</span>
+	</div>
+	<div class="accordion-content">
+  	<ul>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Solidarité 75%</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Solidarité Gratuite</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Réduction 50%</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Forfait Améthyste</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Forfait Gratuité jeunes en insertion</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Réduction 50 % Volontaires du Service civique</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Forfaits ou titres accompagnant handicap</a></div></li>
+    	<li><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.iledefrance-mobilites.fr/titres-et-tarifs/liste?p=actif">Forfaits ou titres personne en situation de handicap</a></div></li>
+  	</ul>
+	</div>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+ 
+  accordionHeaders.forEach(header => {
+	header.addEventListener("click", function() {
+  	this.classList.toggle("active");
+ 	 
+  	const content = this.nextElementSibling;
+  	content.classList.toggle("active");
+ 	 
+  	if (content.classList.contains("active")) {
+    	this.querySelector(".toggle-icon").textContent = "-";
+  	} else {
+    	this.querySelector(".toggle-icon").textContent = "+";
+  	}
+	});
+  });
+});
+</script>
+</body>
+</html>
