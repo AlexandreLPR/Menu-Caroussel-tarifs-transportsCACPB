@@ -13,6 +13,8 @@ Accédez à l'offre de transport en commun  en fontion de votre situation en cli
 ## Information importante 
 Le site n'est pas conforme au résultat du site de l'agglomération car il est modifié visuellement selon le modèle wordpress de l'agglomération de Coulommiers Pays de Brie. 
 Ce thème modifie visuellement directement certaines balises. 
+### Image du menu sur le site de l'agglomération
+![Image](https://github.com/user-attachments/assets/df0d8e81-52a3-4408-94b3-2a918ed6294b)
 ### Lien vers le projet hébergé 
 [Visiter le site](https://alexandrelpr.github.io/Menu-Caroussel-tarifs-transportsCACPB/)
 
