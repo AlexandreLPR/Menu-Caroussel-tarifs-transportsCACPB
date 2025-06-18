@@ -1,9 +1,9 @@
-# Menu-Caroussel-tarifs-transportsCACPB
+# Menu-accordéon-tarifs-transportsCACPB
 
 ## Contexte du projet 
 Ce projet est réalisé dans le cadre de l'ajout d'une fonctionnalité au site de l'agglomération de Coulommiers Pays de Brie. 
 ## Description du projet
-L'objectif de ce projet est de réaliser un menu caroussel pour accéder aux offres de transport en commun d'île de france selon la situation de la personne. 
+L'objectif de ce projet est de réaliser un menu accordéon pour accéder aux offres de transport en commun d'île de france selon la situation de la personne. 
 https://alexandrelpr.github.io/Menu-Caroussel-tarifs-transportsCACPB/
 
 ## Utilisation
